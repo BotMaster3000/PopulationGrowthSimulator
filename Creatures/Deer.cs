@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PopulationGrowthSimulator.Creatures
 {
-    public class Deer : LivingBeing
+    public class Deer : Creature
     {
         public Deer(int deerAge, char deerGender)
         {

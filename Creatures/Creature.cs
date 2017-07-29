@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace PopulationGrowthSimulator.Creatures
 {
-    public class LivingBeing
+    public class Creature
     {
         public string speciesName;
         public int age;
         public char gender;
+        public bool isAlive = true;
 
-        public LivingBeing()
+        public Creature()
         {
         }
     }

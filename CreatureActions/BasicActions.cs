@@ -18,5 +18,16 @@ namespace PopulationGrowthSimulator.CreatureActions
             actionName = "eat";
             actionTimeCost = hours;
         }
+        public void Die(Creatures.Creature creature)
+        {
+            actionName = "die";
+            actionTimeCost = 0;
+            creature.isAlive = false;
+        }
+        public void Reproduce(int hours)
+        {
+            actionName = "reproduce";
+            actionTimeCost = hours;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PopulationGrowthSimulator.CreatureActions;
 
 namespace PopulationGrowthSimulator.Creatures
 {
@@ -20,6 +21,10 @@ namespace PopulationGrowthSimulator.Creatures
             surName = humanSurName;
             energy = humanEnergy;
             maxEnergy = humanMaxEnergy;
+        }
+        public void HandleHuman()
+        {
+
         }
     }
 }

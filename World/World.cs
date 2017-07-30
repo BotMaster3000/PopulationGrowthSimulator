@@ -63,7 +63,14 @@ namespace PopulationGrowthSimulator.World
         }
         public void NextHour()
         {
+            foreach(Human human in humans)
+            {
+                human.HandleHuman();
+            }
+            foreach(Deer deer in deers)
+            {
 
+            }
         }
         public void NextDay()
         {

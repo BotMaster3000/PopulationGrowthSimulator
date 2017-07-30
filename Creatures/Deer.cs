@@ -16,5 +16,6 @@ namespace PopulationGrowthSimulator.Creatures
             energy = deerEnergy;
             maxEnergy = deerMaxEnergy;
         }
+        
     }
 }

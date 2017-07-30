@@ -42,30 +42,30 @@ namespace PopulationGrowthSimulator.World
             {
                 if(i <= humansToInitialize / 2)
                 {
-                    humans.Add(new Human(20, 'w', "human" + i));
+                    humans.Add(new Human(20, 'w', 100, 100, "human" + i));
                 }
                 else
                 {
-                    humans.Add(new Human(20, 'm', "human" + i));
+                    humans.Add(new Human(20, 'm', 100, 100, "human" + i));
                 }
             }
             for(int i = 0; i < deersToInitialize; ++i)
             {
                 if(i <= deersToInitialize / 2)
                 {
-                    deers.Add(new Deer(10, 'w'));
+                    deers.Add(new Deer(10, 'w', 100, 100));
                 }
                 else
                 {
-                    deers.Add(new Deer(10, 'm'));
+                    deers.Add(new Deer(10, 'm', 100, 100));
                 }
             }
         }
-        public void NextDay()
+        public void NextHour()
         {
 
         }
-        public void NextHour()
+        public void NextDay()
         {
 
         }

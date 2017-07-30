@@ -12,6 +12,8 @@ namespace PopulationGrowthSimulator.Creatures
         public int age;
         public char gender;
         public bool isAlive = true;
+        public int energy;
+        public int maxEnergy;
 
         public Creature()
         {

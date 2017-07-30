@@ -8,11 +8,13 @@ namespace PopulationGrowthSimulator.Creatures
 {
     public class Deer : Creature
     {
-        public Deer(int deerAge, char deerGender)
+        public Deer(int deerAge, char deerGender, int deerEnergy, int deerMaxEnergy)
         {
             speciesName = "deer";
             age = deerAge;
             gender = deerGender;
+            energy = deerEnergy;
+            maxEnergy = deerMaxEnergy;
         }
     }
 }

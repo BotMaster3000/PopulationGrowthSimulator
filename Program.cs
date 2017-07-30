@@ -11,11 +11,11 @@ namespace PopulationGrowthSimulator
     {
         static void Main(string[] args)
         {
-            World.World world = new World.World(20, 20);
+            World.World world = new World.World(200, 200);
             world.InitializeCreatures();
             foreach(Human human in world.humans)
             {
-                Console.WriteLine(human.name);
+                Console.WriteLine(human.name + ", " + human.gender + ", " + human.energy + ", " +  human.maxEnergy);
             }
         }
     }

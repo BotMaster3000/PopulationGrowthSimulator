@@ -11,13 +11,15 @@ namespace PopulationGrowthSimulator.Creatures
         public string name;
         public string surName;
 
-        public Human(int humanAge, char humanGender, string humanName = "", string humanSurName = "")
+        public Human(int humanAge, char humanGender, int humanEnergy, int humanMaxEnergy, string humanName = "", string humanSurName = "")
         {
             speciesName = "human";
             age = humanAge;
             gender = humanGender;
             name = humanName;
             surName = humanSurName;
+            energy = humanEnergy;
+            maxEnergy = humanMaxEnergy;
         }
     }
 }

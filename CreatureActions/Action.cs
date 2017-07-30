@@ -9,6 +9,7 @@ namespace PopulationGrowthSimulator.CreatureActions
     public class Action
     {
         public string actionName;
-        public int actionTimeCost; // Soll in Stunden gemessen werden        
+        public int actionTimeCost; // Soll in Stunden gemessen werden
+        public int actionEnergyCost;
     }
 }

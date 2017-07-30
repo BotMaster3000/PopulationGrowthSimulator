@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PopulationGrowthSimulator.Creatures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,12 @@ namespace PopulationGrowthSimulator
     {
         static void Main(string[] args)
         {
+            World.World world = new World.World(20, 20);
+            world.InitializeCreatures();
+            foreach(Human human in world.humans)
+            {
+                Console.WriteLine(human.name);
+            }
         }
     }
 }

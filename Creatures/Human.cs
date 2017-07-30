@@ -16,6 +16,8 @@ namespace PopulationGrowthSimulator.Creatures
             speciesName = "human";
             age = humanAge;
             gender = humanGender;
+            name = humanName;
+            surName = humanSurName;
         }
     }
 }

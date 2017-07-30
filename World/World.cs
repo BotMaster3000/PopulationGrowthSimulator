@@ -28,14 +28,38 @@ namespace PopulationGrowthSimulator.World
         int day = 0;
         int humansToInitialize;
         int deersToInitialize;
+        public List<Human> humans = new List<Human>();
+        public List<Deer> deers = new List<Deer>();
         
-        public World()
+        public World(int numberOfHumans, int numberOfDeers)
         {
-            
+            humansToInitialize = numberOfHumans;
+            deersToInitialize = numberOfDeers;
         }
         public void InitializeCreatures()
         {
-
+            for(int i = 0; i < humansToInitialize; ++i)
+            {
+                if(i <= humansToInitialize / 2)
+                {
+                    humans.Add(new Human(20, 'w', "human" + i));
+                }
+                else
+                {
+                    humans.Add(new Human(20, 'm', "human" + i));
+                }
+            }
+            for(int i = 0; i < deersToInitialize; ++i)
+            {
+                if(i <= deersToInitialize / 2)
+                {
+                    deers.Add(new Deer(10, 'w'));
+                }
+                else
+                {
+                    deers.Add(new Deer(10, 'm'));
+                }
+            }
         }
         public void NextDay()
         {
